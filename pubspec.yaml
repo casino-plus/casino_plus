@@ -1,0 +1,40 @@
+name: casino_plus
+description: >
+  A easy way to add casino games into your application.
+  We provide the user‐friendly APIs.
+version: 0.1.2
+homepage: https://casino-plus.github.io/documents/
+repository: https://github.com/casino-plus/casino_plus
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+  flutter: ">=1.17.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  riverpod: ^1.0.3 # 状態管理ライブラリ
+  flutter_riverpod: ^1.0.3 # riverpod の flutter 連携部分
+  hooks_riverpod: ^1.0.3 # riverpod に hooks 機能を組み込む
+  flutter_hooks: ^0.18.2+1 # hooks と flutter 連携部分
+  intl: ^0.17.0 # Internationalization の略 多言語対応
+  http: ^0.13.4 # web通信
+  http_parser: ^4.0.0 # 通信パラメータのパース
+  json_annotation: ^4.4.0 # JSONシリアライズのアノテーション
+  freezed_annotation: ^1.1.0 # freezed のメタデータ付与部分
+  uuid: ^3.0.5 # UUID
+  collection: ^1.15.0 # firstWhereOrNullを使いたいので導入
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: # コード生成補助
+  freezed: # immutable なクラスを作成
+  json_serializable: # JSONシリアライズ
+  flutter_lints: # 静的解析
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/ # 画像
+

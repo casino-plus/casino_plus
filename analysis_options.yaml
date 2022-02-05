@@ -1,0 +1,12 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  errors:
+    invalid_annotation_target: ignore # for freezed
+
+linter:
+  rules:
+    use_key_in_widget_constructors: false # Key を使いこなせないため

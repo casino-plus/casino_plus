@@ -1,0 +1,58 @@
+# flutter analyze : 静的解析を実行
+# dart fix --dry-run : Dart標準機能で自動修正可能な issue を表示
+# dart fix --apply : 実際に自動修正する
+# dart pub publish --dry-run で公開しても問題ないかテストできる
+
+こんにちは カジノプラス の開発スタッフです
+このページをご覧いただきありがとうございます 😃
+
+- プルリクエスト、問題の報告、意見は大歓迎です 🎉
+- 協力してくれる方は、初心者/経験者を問わず、1 コミットだけや練習でも OK です
+- Twitter で連絡待ってます 🐥
+- 頻繁に連絡を取る方は Slack へ招待させていただきます
+
+メインで開発している人の Twitter
+
+ルビードッグ(@Rubydog725) https://twitter.com/Rubydog725
+
+詳しくはこちらから！(注意: 作成中のページです)
+https://casino-plus.github.io/documents/
+
+View -> Presenter -> Sender -> 
+-> Client.send -> (Center) -> Client.onReceive ->
+-> Receiver -> Host -> Sender ->
+-> Client.send -> (Center) -> Client.onReceive ->
+-> Receiver -> Presenter -> View
+
+- router
+- types
+- config
+- components
+- pages
+- center_client
+
+依存関係図を作ってからスタートする
+router, pagesは最後につくる(依存する側) PageId とか空の画面は同時並行でつくる
+reducers, components, stateとか (依存される側) を先に作って
+controller と presenter, repository を作って
+types config は 適宜付け足していく
+
+
+## 開発メモ
+
+- データクラスの生成(freezed)
+
+```
+$ flutter pub run build_runner build --delete-conflicting-outputs
+```
+
+
+JSONの変換
+final stringJson = '''
+  {
+    "id": 100,
+    "name": "jhon"
+  }
+''';
+final decodedJson = json.decode(stringJson); // 文字列スタートの場合はまずデコードする
+final user = User.fromJson(decodedJson); // タイプへ変換
