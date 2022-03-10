@@ -7,6 +7,7 @@ import 'package:freezed_annotation/freezed_annotation.dart';
 part 'player.freezed.dart';
 part 'player.g.dart';
 
+/// player
 @freezed
 class Player with _$Player {
   const Player._();

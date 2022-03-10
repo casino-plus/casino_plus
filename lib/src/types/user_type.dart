@@ -5,11 +5,13 @@
 import 'package:json_annotation/json_annotation.dart';
 import 'package:collection/collection.dart';
 
+/// Type of Users Human or not
 enum UserType {
   human,
   bot,
 }
 
+/// Extensions for UserType
 extension UserTypeExt on UserType {
   static final rawValues = {
     UserType.human: 0,

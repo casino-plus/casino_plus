@@ -2,7 +2,7 @@ name: casino_plus
 description: >
   A easy way to add casino games into your application.
   We provide the user‐friendly APIs.
-version: 0.1.2
+version: 0.1.3
 homepage: https://casino-plus.github.io/documents/
 repository: https://github.com/casino-plus/casino_plus
 

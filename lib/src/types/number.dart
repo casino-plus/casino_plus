@@ -21,6 +21,7 @@ enum Number {
   joker,
 }
 
+/// Number Extension
 extension NumberX on Number {
   static final rawValues = {
     Number.back: 0,

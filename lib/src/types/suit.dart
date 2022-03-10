@@ -12,6 +12,7 @@ enum Suit {
   joker,
 }
 
+/// Suit Extension
 extension SuitX on Suit {
   static final rawValues = {
     Suit.back: 0,

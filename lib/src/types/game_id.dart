@@ -11,6 +11,7 @@ enum GameId {
   commingSoon,
 }
 
+/// Extensions for Game ID
 extension GameIdExt on GameId {
   static final rawValues = {
     GameId.cakepoker: 1,
