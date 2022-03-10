@@ -1,6 +1,6 @@
 # Casino+
 
-![CasinoPlusHeaderImage](https://github.com/casino-plus/casino_plus/blob/main/resources/images/casino-plus-header.png)
+![casino-plus-header](https://github.com/casino-plus/casino_plus/blob/main/resources/images/casino-plus-header.png)
 
 ## Let's add Casino games into your application.
 
@@ -108,7 +108,3 @@ Main developer's twitter account
 - @Rubydog725
   https://twitter.com/Rubydog725
 
-<br>
-
-more info (WARN: in preparation)  
-https://casino-plus.github.io/documents/
