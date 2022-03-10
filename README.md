@@ -1,6 +1,6 @@
 # Casino+
 
-![CasinoPlusHeaderImage](https://casino-plus.github.io/documents/static/assets/images/casino-plus-header.png)
+![CasinoPlusHeaderImage](https://github.com/casino-plus/casino_plus/blob/main/resources/images/casino-plus-header.png)
 
 ## Let's add Casino games into your application.
 
